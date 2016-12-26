@@ -1,8 +1,39 @@
 --yoloswag is for the real bros
 
 local lives = 10
+math.randomseed(os.time())
+local randomNumber = math.random(1 , 100)
+
+
 print("Welcome to the Guessing Game!")
 print("you have "..lives.." lives left")
 
 while lives > 0 do
+  print("you have "..lives.." lives left, Guess the number!")
   
+  local number = io.read()
+  number = tonumber(number)
+  
+  if number == randomnumber then
+  
+    print("You guessed correctly congratulations! you won!")
+      
+    break 
+  
+  elseif number < randomNumber then 
+  
+    print("Guess higher!")
+    
+    
+  elseif number > randomNumber then
+  
+    ("Guess lower!")
+  
+  end
+  lives = lives - 1
+  if lives <= o then 
+  
+  print("You have failed")
+  
+  break
+end
