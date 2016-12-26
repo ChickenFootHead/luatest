@@ -1,1 +1,8 @@
 --yoloswag is for the real bros
+
+local lives = 10
+print("Welcome to the Guessing Game!")
+print("you have "..lives.." lives left")
+
+while lives > 0 do
+  
